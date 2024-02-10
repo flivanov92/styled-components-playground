@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import JustTitle from './title';
+import { SButton } from './button';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Styled components</h1>
+      <JustTitle>Dynamic</JustTitle>
+      <JustTitle>Special</JustTitle>
+      <JustTitle special>Styles</JustTitle>
+      <SButton type='submit'>Download Button</SButton>
     </div>
   );
-}
+};
 
 export default App;
